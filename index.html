@@ -26,7 +26,7 @@
 document.body.style.backgroundColor = "green";  
 
 let tmp=document.querySelector("body");
-tmp.style.backgroundColor = "lightblue";
+document.body.style.backgroundColor = "lightblue";
 
 let i=1;
 let stop=0;
@@ -82,28 +82,28 @@ function getRndInteger(min, max) {
 function changecolor() {
   if ( sec == 0 ) { 
     sec = 1
-    tmp.style.backgroundColor = "white"; 
+    document.body.style.backgroundColor = "white"; 
   } else { 
     sec = 0 
     let i = Math.floor(Math.random() * 4);
     switch(i) {
       case 1:
-        tmp.style.backgroundColor = "green"; 
+        document.body.style.backgroundColor = "green"; 
         break;
       case 2:
-        tmp.style.backgroundColor = "red"; 
+        document.body.style.backgroundColor = "red"; 
         break;
       case 3:
-        tmp.style.backgroundColor = "blue"; 
+        document.body.style.backgroundColor = "blue"; 
         break;	  
       default:
-       tmp.style.backgroundColor = "yellow"; 
+       document.body.style.backgroundColor = "yellow"; 
     }
   }
   if ( conti == 0 ) { 
     setTimeout(changecolor, getRndInteger(2, 5)); 
   } else {
-    tmp.style.backgroundColor = "orange";
+    document.body.style.backgroundColor = "orange";
   }
 }
 
