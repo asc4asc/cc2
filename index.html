@@ -126,11 +126,19 @@ switch(i) {
 // changecolor();
 
 document.body.addEventListener("click",clickevent);
+ 
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
     
-    
-  </script>  
+</script>  
     
   <!--- <script src="app1.js"></script> -->
-  <script src="js/main.js"></script>
+  <!--- <script src="js/main.js"></script> --->
 </body>
 </html>
