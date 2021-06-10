@@ -28,7 +28,7 @@ document.body.style.backgroundColor = "lightblue";
 let i=1;
 let stop=0;
 let conti=0;
-let sec=1;
+// let sec=1;
 var elem = document.documentElement;
 
 // setInterval(changecolor, 3000);
@@ -76,6 +76,10 @@ function getRndInteger(min, max) {
   return Math.floor((Math.random() * (max - min) ) + min) * 1000 ;
 }
 
+import * as c1 from './lib/changecolor.js';
+import { sec } from './lib/changecolor.js';
+sec=1;
+	
 function changecolor() {
   if ( sec == 0 ) { 
     sec = 1
