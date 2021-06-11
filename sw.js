@@ -2,6 +2,7 @@ var cacheName = 'hello-pwa';
 var filesToCache = [
   '.',
   'index.html',
+  'lib/changecolor.js',
   'manifest.json'
 ];
 
