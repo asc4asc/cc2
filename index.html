@@ -25,17 +25,17 @@
 <script>
     var nos = new NoSleep();
     nos.enable(); // keep the screen on!
-<script>  
+</script>  
 
 <script type="module">
 
 import * as c1 from './lib/changecolor.js';
 import * as c2 from './lib/beep.js';
-
-c3.nosleep();  
-c2.beep();
-  
 document.body.style.backgroundColor = "lightblue";
+c2.beep();
+
+c1.colorchange();  
+  
 
 document.body.addEventListener("click",c1.clickevent);
  
