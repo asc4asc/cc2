@@ -30,17 +30,18 @@
 <clock></clock>
     
 <script type="module">  
-// import { beep } from './modules/module.js';  
-import { clock } from './lib/clock.js';     
-import { changecolor } from './lib/changecolor.js';
+//  import { newFunctionName, anotherNewFunctionName } from './modules/module.js';
+import { beep1, beep } from './modules/module.js';  
+import { clock1, clock } from './lib/clock.js';     
+import { changecolor1, changecolor } from './lib/changecolor.js';
 // import * as c2 from './lib/beep.js';
   
 document.body.style.backgroundColor = "lightblue";
-beep();
+beep1();
 
-document.body.addEventListener("click",c1.clickevent);
+document.body.addEventListener("click",clickevent1);
 
-document.body.addEventListener("click",c3.clock);
+document.body.addEventListener("click",clock1);
    
 window.onload = () => {
   'use strict';
