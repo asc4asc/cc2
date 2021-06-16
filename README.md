@@ -1,8 +1,6 @@
 # App (Only a copy please use the original !!!)
 
-Program als "Progressive Web App"
-
-Ich habe eine App. hinzugefügt.
+Problem is that both module works undepended and are not controlled from a master app.
 
 ## Vom Original:
 
